@@ -88,3 +88,6 @@ body.shared-mode .sharedBanner:not(.hidden){display:grid!important}
 
 /* V6.11 scanned-contact save control */
 .headerActions{display:flex;align-items:center;gap:8px}.saveContactBtn{color:#ff7a38;font-size:1.45rem;line-height:1}.saveContactBtn[aria-pressed="true"]{background:#ff5b1a1c;border-color:#ff5b1a88;box-shadow:0 0 20px #ff5b1a33}.shared-mode .scanHint{display:none!important}
+
+/* V6.12 separate scanned contacts access */
+.contactsBtn{font-size:1.25rem;color:#fff}.shared-mode #contactsBtn{display:block}.historyItem.favorite{order:-1}
