@@ -1,1 +1,0 @@
-{"name":"Phoen Smartcard","short_name":"Smartcard","description":"A self-hostable digital business card by Phoen.","start_url":"./","scope":"./","display":"standalone","background_color":"#050505","theme_color":"#050505","icons":[{"src":"logo.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
