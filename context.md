@@ -1,24 +1,33 @@
-## Project Context
+# Project Context
 
-### Processing rules
-- Read the full project before editing.
+## Agent rules
+
+- Read the full project bundle first.
 - Preserve existing behavior unless requested.
-- Preserve filenames and relative paths.
-- Return changed files in full.
+- Treat each file block as a separate file.
+- Preserve paths and project structure.
+- Return every changed file in full.
 - Never replace code with ellipses.
-- Prefer minimal targeted changes.
-- Validate HTML CSS and JavaScript syntax.
+- Prefer minimal, targeted changes.
+- Reuse existing project conventions.
+- Avoid unrelated refactoring.
+- Validate syntax and integrations.
 
-### Project rules
-- Use the product name Smartcard.
-- Keep Smartcard framework-free and lightweight.
-- Design mobile-first and scale cleanly to desktop.
-- Preserve installable PWA behavior.
-- Keep card sharing self-hostable.
-- Avoid mandatory centralized services.
-- Present Smartcard as a paper-conscious conference tool.
-- Promote Phoen.org visibly without obstructing contact actions.
-- Link source controls to https://github.com/phoenorg/smartcard.
-- Keep source and Phoen links accessible from shared cards.
-- Keep personal card data local until the user shares it.
-- Keep claims factual and non-misleading.
+## Context maintenance
+
+- Infer only reusable rules from prompts.
+- Ignore one-off requests and transient details.
+- Keep each rule to one short bullet.
+- Merge overlapping rules.
+- Replace outdated rules.
+- Remove contradicted rules.
+- Never append duplicates.
+- Keep the most specific current rule.
+- Limit this file to 30 bullets.
+- Update this file only when context changes.
+
+## Project rules
+
+- Add stable project-specific rules here.
+- Emphasize decentralized, local-first sharing and Phoen.org branding.
+- Keep legal and source-code links accessible in settings.
