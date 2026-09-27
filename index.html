@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Smartcard by Phoen: a self-hostable digital business card for conferences and real-world connections.">
+  <title>Smartcard by Phoen</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="https://phoen.org" target="_blank" rel="noopener"><img src="logo.svg" alt=""><span><b>SMARTCARD</b><small>BY PHOEN</small></span></a>
+  <nav><button id="historyBtn" class="iconBtn" aria-label="Scanned cards">◫</button><button id="settingsBtn" class="iconBtn" aria-label="Settings">⚙</button></nav>
+</header>
+<main>
+<section id="welcome" class="screen welcome">
+  <div class="hero"><p class="eyebrow">A PHOEN OPEN PROJECT</p><h1>Your card.<br><em>Your domain.</em></h1><p class="lead">At a conference without a paper business card? Open Smartcard, show your QR and share your details in seconds. Self-hosted, paper-conscious and unmistakably yours.</p><div class="heroActions"><button id="startBtn" class="primary">Create my Smartcard <span>↗</span></button><a class="secondary" href="https://github.com/phoenorg/smartcard" target="_blank" rel="noopener">View source code</a></div><div class="principles"><span>Self-hostable</span><span>No account</span><span>Reusable</span></div><a class="phoenPromo" href="https://phoen.org" target="_blank" rel="noopener"><strong>Explore Phoen.org</strong><small>Open, lightweight and privacy-conscious digital projects.</small></a></div>
+</section>
+<section id="editor" class="screen editor hidden"><div class="sectionTitle"><button id="editorBack" class="textBtn">← Back</button><div><p class="eyebrow">BUILD YOUR CARD</p><h2>Make the introduction memorable.</h2></div></div><form id="cardForm"><div class="formGrid"><label>Full name<input id="name" required autocomplete="name"></label><label>Role<input id="role" autocomplete="organization-title"></label><label>Company<input id="company" autocomplete="organization"></label><label>Email<input id="email" type="email" autocomplete="email"></label><label>Phone<input id="phone" type="tel" autocomplete="tel"></label><label>Website<input id="website" type="url" placeholder="https://" autocomplete="url"></label><label class="wide">Photo URL<input id="photoUrl" type="url" placeholder="https://"></label></div><button class="primary" type="submit">Save and open my card <span>↗</span></button></form><p class="localNote">Your card data stays in this browser. When you share it, the details are encoded in the generated link.</p></section>
+<section id="cardScreen" class="screen cardScreen hidden"><div class="cardShell"><article id="card" class="card"><div class="face front"><div class="orbit one"></div><div class="orbit two"></div><div class="cardTop"><a href="https://phoen.org" target="_blank" rel="noopener" class="microBrand">SMARTCARD <small>BY PHOEN</small></a><button id="favoriteBtn" class="favorite" aria-label="Favorite">☆</button></div><div class="visual"><img id="photo" class="hidden" alt="Contact portrait"><div id="miniQr" class="miniQr" aria-label="Share QR"></div></div><div class="identity"><p id="companyText"></p><h2 id="nameText"></h2><p id="roleText"></p></div><div class="contactButtons"><a id="emailAction"><span>✉</span><b id="emailText"></b></a><a id="phoneAction"><span>☎</span><b id="phoneText"></b></a><a id="webAction" target="_blank" rel="noopener"><span>↗</span><b id="webText"></b></a></div><div class="mainActions"><button id="shareBtn">Share</button><button id="vcfBtn">Save contact</button><button id="flipBtn">Show QR</button></div></div><div class="face back"><div class="scanHead"><span>SCAN TO CONNECT</span><button id="closeQr">×</button></div><div id="qr" class="qr"></div><div class="qrCopy"><h3 id="qrName"></h3><p>No app required. One scan, one useful contact.</p></div><footer class="cardFooter"><a href="https://phoen.org" target="_blank" rel="noopener">Built by Phoen</a><a href="https://github.com/phoenorg/smartcard" target="_blank" rel="noopener">Source code</a></footer></div></article></div><div id="sharedBanner" class="sharedBanner hidden"><span>You opened a shared Smartcard</span><a href="https://phoen.org" target="_blank" rel="noopener">Discover Phoen.org</a></div></section>
+</main>
+<dialog id="settingsDialog"><div class="dialogHead"><div><small>SMARTCARD</small><h3>Settings</h3></div><button class="closeDialog">×</button></div><button id="editBtn" class="row">Edit my card <span>→</span></button><button id="installBtn" class="row">Install Smartcard <span>＋</span></button><a class="row linkRow" href="https://github.com/phoenorg/smartcard" target="_blank" rel="noopener">Source code <span>↗</span></a><a class="row linkRow" href="https://phoen.org" target="_blank" rel="noopener">More from Phoen <span>↗</span></a><button id="resetBtn" class="row danger">Delete local card <span>×</span></button></dialog>
+<dialog id="historyDialog"><div class="dialogHead"><div><small>RECENT CONNECTIONS</small><h3>Scanned cards</h3></div><button class="closeDialog">×</button></div><div id="historyList" class="historyList"></div><button id="clearHistory" class="clear">Clear history</button></dialog>
+<div id="toast" role="status"></div>
+<script src="qr.bundle.js"></script><script src="app.js"></script>
+</body></html>

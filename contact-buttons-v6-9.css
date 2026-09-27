@@ -1,0 +1,110 @@
+/* Phoen Smartcard V6.9 - large contact controls */
+
+/* Contact information cards */
+.details {
+  grid-template-columns: 1fr !important;
+  gap: 11px !important;
+  margin-top: 16px !important;
+}
+
+.details a {
+  grid-column: 1 / -1 !important;
+  min-height: 64px !important;
+  padding: 13px 16px !important;
+  border-radius: 18px !important;
+  align-items: center !important;
+  gap: 14px !important;
+  background: linear-gradient(135deg, rgba(255,91,26,.16), rgba(255,255,255,.045)) !important;
+  border: 1px solid rgba(255,105,45,.38) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.08), 0 12px 30px rgba(0,0,0,.34) !important;
+}
+
+.details a span {
+  flex: 0 0 38px !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 13px !important;
+  display: grid !important;
+  place-items: center !important;
+  background: rgba(255,91,26,.15) !important;
+  color: #ff7a38 !important;
+  font-size: 1.05rem !important;
+  box-shadow: 0 0 20px rgba(255,91,26,.22) !important;
+}
+
+.details a b {
+  font-size: clamp(.9rem, 4vw, 1.08rem) !important;
+  line-height: 1.15 !important;
+  font-weight: 720 !important;
+}
+
+/* Main card actions: Share, VCF and Show QR */
+.actions {
+  gap: 11px !important;
+  padding-top: 16px !important;
+}
+
+.actions button {
+  min-height: 70px !important;
+  height: auto !important;
+  padding: 12px 8px !important;
+  border-radius: 20px !important;
+  font-size: clamp(.78rem, 3.3vw, .96rem) !important;
+  font-weight: 820 !important;
+  letter-spacing: .025em !important;
+  background: linear-gradient(145deg, rgba(255,91,26,.22), rgba(16,7,3,.96)) !important;
+  border: 1px solid rgba(255,105,45,.55) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.1), 0 12px 30px rgba(0,0,0,.4), 0 0 24px rgba(255,91,26,.12) !important;
+}
+
+.actions button:active {
+  transform: scale(.97) !important;
+  background: #ff5b1a !important;
+}
+
+@media (min-width: 430px) and (min-height: 780px) {
+  .details a {
+    min-height: 72px !important;
+    padding: 15px 18px !important;
+  }
+
+  .details a span {
+    width: 44px !important;
+    height: 44px !important;
+    flex-basis: 44px !important;
+    font-size: 1.2rem !important;
+  }
+
+  .actions button {
+    min-height: 78px !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-height: 720px) {
+  .details {
+    gap: 7px !important;
+    margin-top: 10px !important;
+  }
+
+  .details a {
+    min-height: 54px !important;
+    padding: 9px 12px !important;
+  }
+
+  .details a span {
+    width: 32px !important;
+    height: 32px !important;
+    flex-basis: 32px !important;
+  }
+
+  .actions {
+    gap: 7px !important;
+    padding-top: 10px !important;
+  }
+
+  .actions button {
+    min-height: 60px !important;
+    border-radius: 17px !important;
+  }
+}
