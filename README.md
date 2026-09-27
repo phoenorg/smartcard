@@ -99,11 +99,3 @@ Smartcard is a [Phoen](https://phoen.org) project. Phoen creates open, lightweig
 ## Sustainability note
 
 Smartcard can reduce reliance on disposable business cards. Digital services still use devices, networks and hosting infrastructure, so the project favors a small framework-free footprint, reusable cards and long-lived self-hosted URLs rather than claiming that digital sharing has no impact.
-
-## Contributing
-
-Issues and pull requests are welcome. Keep contributions lightweight, mobile-first, accessible and compatible with self-hosting. Avoid mandatory third-party services when a local or static approach is available.
-
-## License
-
-Add a `LICENSE` file before publishing if you want to define reuse and contribution terms. Until a license is included, standard copyright rules apply.
